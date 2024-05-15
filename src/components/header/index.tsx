@@ -7,7 +7,7 @@ import { routes } from '../../configs';
 
 export default function Header() {
     return (
-        <div className={`w-full flex justify-center py-2 ${cx("wrapper")}`}>
+        <div className={`w-full flex justify-center py-2 ${cx('wrapper')}`}>
             <div className="w-[1200px] flex justify-between flex-nowrap">
                 <div>
                     <img src={logoIuh} alt="logo iuh" className={cx('logo-iuh')} />
@@ -19,9 +19,7 @@ export default function Header() {
                     </Link>
                     <details className="dropdown">
                         <summary className="flex items-center gap-1">
-                            <span
-                                className='hover:text-blue-500 cursor-pointer '
-                            >Nguyễn Văn A</span>
+                            <span className="hover:text-blue-500 cursor-pointer ">Nguyễn Văn A</span>
                             <i className="ri-arrow-down-s-fill"></i>
                         </summary>
                         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 w-52">
