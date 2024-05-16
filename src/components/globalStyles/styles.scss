@@ -3,3 +3,50 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --background-color: #e7ecf0;
+    --primary-color: #667580;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+}
+
+select {
+    background-color: #fff;
+    color: #555;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 1.4;
+    outline: none;
+}
+
+tr.selected {
+    background-color: #fff9c0;
+    color: #0c6fbe;
+}
+
+tr.active {
+    background-color: #00aff0;
+    color: #fff;
+
+    * {
+        color: #fff;
+    }
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.text-red {
+    color: #ff0000;
+}

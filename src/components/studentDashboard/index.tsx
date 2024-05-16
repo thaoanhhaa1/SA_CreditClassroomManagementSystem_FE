@@ -1,14 +1,14 @@
+import { Link } from 'react-router-dom';
+import calendar from '../../assets/images/calendar.png';
+import courseRegister from '../../assets/images/courseregistration.png';
+import payment from '../../assets/images/payment.png';
+import resultStuding from '../../assets/images/result_studing.png';
+import money from '../../assets/images/tracuucongno.png';
+import { routes } from '../../configs';
+import Header from '../header';
 import styles from './styles.module.scss';
 import classNames from 'classnames/bind';
-import Header from '../header';
-import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
-import calendar from '../../assets/images/calendar.png';
-import resultStuding from '../../assets/images/result_studing.png';
-import courseRegister from '../../assets/images/courseregistration.png';
-import money from "../../assets/images/tracuucongno.png";
-import payment from "../../assets/images/payment.png";
-import { routes } from '../../configs';
 
 export default function StudentDashboard() {
     return (
@@ -21,7 +21,7 @@ export default function StudentDashboard() {
                         <div className="w-3/5 rounded-md bg-white p-3">
                             <h4 className="font-bold pb-2 border-b-2">Thông tin sinh viên</h4>
                             <div className="flex flex-nowrap gap-3 mt-3">
-                                <div className="w-1/2">
+                                <div className=" w-1/2">
                                     <div className="flex flex-nowrap gap-2 mb-3">
                                         <p className="text-sm">MSSV: </p>
                                         <p className="text-sm font-semibold">2018600000</p>
@@ -123,53 +123,41 @@ export default function StudentDashboard() {
                     </div>
 
                     <div className="flex flex-nowrap items-center mt-3 gap-5">
-                        <Link to={routes.weeklySchedule} className=' bg-white rounded-md py-5 px-5 group hover:text-cyan-500'>
-                            <div className='flex justify-center mb-5'>
-                                <img
-                                    src={calendar}
-                                    className='text-center'
-                                />
+                        <Link
+                            to={routes.weeklySchedule}
+                            className=" bg-white rounded-md py-5 px-5 group hover:text-cyan-500"
+                        >
+                            <div className="flex justify-center mb-5">
+                                <img src={calendar} className="text-center" />
                             </div>
-                            <p className='text-sm mt-5 text-center' >Lịch theo tuần</p>
+                            <p className="text-sm mt-5 text-center">Lịch theo tuần</p>
                         </Link>
 
-                        <Link to={""} className=' bg-white rounded-md py-5 px-5 hover:text-cyan-500'>
-                            <div className='flex justify-center mb-5'>
-                                <img
-                                    src={resultStuding}
-                                    className='text-center'
-                                />
+                        <Link to={''} className=" bg-white rounded-md py-5 px-5 hover:text-cyan-500">
+                            <div className="flex justify-center mb-5">
+                                <img src={resultStuding} className="text-center" />
                             </div>
-                            <p className='text-sm mt-5 text-center '>Kết quả học tập</p>
+                            <p className="text-sm mt-5 text-center ">Kết quả học tập</p>
                         </Link>
-                        <Link to={""} className=' bg-white rounded-md py-5 px-5 hover:text-cyan-500'>
-                            <div className='flex justify-center mb-5'>
-                                <img
-                                    src={courseRegister}
-                                    className='text-center'
-                                />
+                        <Link to={routes.registerCourse} className=" bg-white rounded-md py-5 px-5 hover:text-cyan-500">
+                            <div className="flex justify-center mb-5">
+                                <img src={courseRegister} className="text-center" />
                             </div>
-                            <p className='text-sm mt-5 text-center hover:text-cyan-500'>Đăng ký học phần</p>
+                            <p className="text-sm mt-5 text-center hover:text-cyan-500">Đăng ký học phần</p>
                         </Link>
 
-                        <Link to={""} className=' bg-white rounded-md py-5 px-5 hover:text-cyan-500'>
-                            <div className='flex justify-center mb-5'>
-                                <img
-                                    src={money}
-                                    className='text-center'
-                                />
+                        <Link to={''} className=" bg-white rounded-md py-5 px-5 hover:text-cyan-500">
+                            <div className="flex justify-center mb-5">
+                                <img src={money} className="text-center" />
                             </div>
-                            <p className='text-sm mt-5 text-center hover:text-cyan-500'>Tra cứu công nợ</p>
+                            <p className="text-sm mt-5 text-center hover:text-cyan-500">Tra cứu công nợ</p>
                         </Link>
 
-                        <Link to={""} className=' bg-white rounded-md py-5 px-5 hover:text-cyan-500'>
-                            <div className='flex justify-center mb-5'>
-                                <img
-                                    src={payment}
-                                    className='text-center'
-                                />
+                        <Link to={''} className=" bg-white rounded-md py-5 px-5 hover:text-cyan-500">
+                            <div className="flex justify-center mb-5">
+                                <img src={payment} className="text-center" />
                             </div>
-                            <p className='text-sm mt-5 text-center hover:text-cyan-500'>Thanh toán trực tuyến</p>
+                            <p className="text-sm mt-5 text-center hover:text-cyan-500">Thanh toán trực tuyến</p>
                         </Link>
                     </div>
                 </div>
