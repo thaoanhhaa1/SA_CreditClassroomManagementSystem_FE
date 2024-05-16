@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import { useState } from 'react';
-import { IClassDetail } from '../../../../interfaces';
+import { IClassDetail } from '../../interfaces';
 import Table from '../table';
 import styles from './styles.module.scss';
 

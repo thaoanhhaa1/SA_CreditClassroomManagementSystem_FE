@@ -1,6 +1,6 @@
 import LocalPrintshopIcon from '@mui/icons-material/LocalPrintshop';
 import classNames from 'classnames/bind';
-import { IRegisteredClass } from '../../../../interfaces';
+import { IRegisteredClass } from '../../interfaces';
 import Table from '../table';
 import ClassRegisteredItem from './ClassRegisteredItem';
 import styles from './styles.module.scss';

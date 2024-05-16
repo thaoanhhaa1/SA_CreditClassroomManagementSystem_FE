@@ -4,8 +4,9 @@ import React, { useRef, useState } from 'react';
 import { useOnClickOutside } from 'usehooks-ts';
 import deleteImage from '../../../../assets/images/ico-delete-min.png';
 import selectImage from '../../../../assets/images/ico-select-min.png';
-import { IPopper, IRegisteredClass } from '../../../../interfaces';
 import Popper from '../../../../components/popper';
+import { IPopper } from '../../../../interfaces';
+import { IRegisteredClass } from '../../interfaces';
 import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);

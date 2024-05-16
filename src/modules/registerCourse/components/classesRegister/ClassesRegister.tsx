@@ -1,7 +1,7 @@
 import { Checkbox } from '@mui/joy';
 import classNames from 'classnames/bind';
 import { ChangeEvent, useState } from 'react';
-import { IClass } from '../../../../interfaces';
+import { IClass } from '../../interfaces';
 import Table from '../table';
 import styles from './styles.module.scss';
 

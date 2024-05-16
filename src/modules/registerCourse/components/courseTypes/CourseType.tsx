@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { ICourseType } from '../../../../interfaces';
+import { ICourseType } from '../../interfaces';
 import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);

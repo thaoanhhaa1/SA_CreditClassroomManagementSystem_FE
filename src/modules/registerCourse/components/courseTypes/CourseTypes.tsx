@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { ICourseType } from '../../../../interfaces';
+import { ICourseType } from '../../interfaces';
 import CourseType from './CourseType';
 
 const CourseTypes = ({ types }: { types: ICourseType[] }) => {
