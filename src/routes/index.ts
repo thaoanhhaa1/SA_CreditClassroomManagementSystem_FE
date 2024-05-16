@@ -1,22 +1,21 @@
 import { routes } from '../configs';
 import { Route } from '../interfaces';
 import DefaultLayout from '../layouts';
-import home from '../pages/home';
-import login from '../pages/login';
-import notFound from '../pages/notFound';
-import registerCourse from '../pages/registerCourse';
-import studentDashboard from '../pages/studentDashboard';
-import WeeklySchedule from '../pages/weeklySchedule';
+import Login from '../modules/auth';
+import NotFound from '../components/notFound';
+import RegisterCourse from '../modules/registerCourse';
+import StudentDashboard from '../modules/studentDashboard';
+import WeeklySchedule from '../modules/weeklySchedule';
 
 const publicRoutes: Route[] = [
-    { path: routes.home, element: home },
-    { path: routes.notFound, element: notFound },
-    { path: routes.login, element: login },
+    { path: routes.notFound, element: NotFound },
+    { path: routes.login, element: Login },
 ];
 const privateRoutes: Route[] = [
-    { path: routes.studentDashboard, element: studentDashboard },
+    { path: routes.home, element: StudentDashboard },
+    { path: routes.studentDashboard, element: StudentDashboard },
     { path: routes.weeklySchedule, element: WeeklySchedule },
-    { path: routes.registerCourse, element: registerCourse, layout: DefaultLayout },
+    { path: routes.registerCourse, element: RegisterCourse, layout: DefaultLayout },
 ];
 
 export { privateRoutes, publicRoutes };
