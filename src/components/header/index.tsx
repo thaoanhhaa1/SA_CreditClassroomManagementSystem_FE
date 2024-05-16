@@ -9,9 +9,9 @@ export default function Header() {
     return (
         <div className={`w-full flex justify-center py-2 ${cx("wrapper")}`}>
             <div className="w-[1200px] flex justify-between flex-nowrap">
-                <div>
+                <Link to={routes.studentDashboard}>
                     <img src={logoIuh} alt="logo iuh" className={cx('logo-iuh')} />
-                </div>
+                </Link>
                 <div className="flex items-center gap-5">
                     <Link to={routes.studentDashboard} className="flex items-center gap-1">
                         <i className="ri-home-8-line"></i>

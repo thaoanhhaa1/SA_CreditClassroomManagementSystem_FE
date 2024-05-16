@@ -8,6 +8,7 @@ import resultStuding from '../../assets/images/result_studing.png';
 import courseRegister from '../../assets/images/courseregistration.png';
 import money from "../../assets/images/tracuucongno.png";
 import payment from "../../assets/images/payment.png";
+import { routes } from '../../configs';
 
 export default function StudentDashboard() {
     return (
@@ -122,7 +123,7 @@ export default function StudentDashboard() {
                     </div>
 
                     <div className="flex flex-nowrap items-center mt-3 gap-5">
-                        <Link to={""} className=' bg-white rounded-md py-5 px-5 group hover:text-cyan-500'>
+                        <Link to={routes.weeklySchedule} className=' bg-white rounded-md py-5 px-5 group hover:text-cyan-500'>
                             <div className='flex justify-center mb-5'>
                                 <img
                                     src={calendar}
